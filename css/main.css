@@ -1,0 +1,205 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background: radial-gradient(ellipse at top, #0b0c2a 0%, #000010 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+
+    background: linear-gradient(90deg, #4facfe, #6a5cff, #b721ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 8px rgba(120,150,255,0.4);
+}
+
+.product-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding-bottom: 50px;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.product-img {
+    width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+    transform: scale(1.03);
+}
+
+.thumb-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.thumb-img:hover {
+    transform: scale(1.1);
+    border-color: #198754;
+}
+
+.active-thumb {
+    border-color: #198754;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+}
+
+.product-info {
+    font-size: 1.0rem;
+}
+
+.product-info strong {
+    color: #555;
+    min-width: 120px;
+    display: inline-block;
+}
+
+.product-price {
+    margin-bottom: 1.5rem;
+}
+
+.product-price .current-price {
+    font-size: 2.5rem;       
+    font-weight: 700;        
+    color: #0a0a0a;          
+    letter-spacing: 0.5px;   
+}
+
+.logo-img{
+    height:70px;
+    width:70px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+
+    image-rendering:auto;
+}
+
+.brand-logo:hover .logo-img{
+    transform:scale(1.08);
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.brand-title{
+    font-size:1.6rem;
+    font-weight:500;
+    color:#333;
+
+    transition:color 0.25s ease;
+}
+
+.brand-logo:hover .brand-title{
+    color:#000;
+}
+
+.btn-space-catalog {
+    background: linear-gradient(135deg, #1a1a2e, #162447, #1f4068, #e43f5a);
+    background-size: 400% 400%;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(228, 63, 90, 0.6);
+    animation: gradientShift 5s ease infinite; 
+}
+
+.btn-space-catalog:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(228, 63, 90, 0.9);
+    background-position: 100% 0;
+}
+
+.btn-space {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 999;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #1a1a2e, #162447, #1f4068, #e43f5a);
+    background-size: 400% 400%;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(228, 63, 90, 0.6);
+}
+
+.btn-space:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(228, 63, 90, 0.9);
+    background-position: 100% 0;
+}
+
+.btn-space {
+    animation: gradientShift 5s ease infinite;
+}
+
+.carousel-inner img {
+    max-height: 600px;
+    object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    background-size: 100%, 100%;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    content: '';
+}
+
+@keyframes gradientShift {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+@keyframes gradientShift {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+@media (max-width: 768px) {
+    .product-img {
+        max-height: 350px;
+    }
+}
