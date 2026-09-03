@@ -5,8 +5,7 @@ body {
 .site-header {
     width: 100%;
     padding: 18px 0;
-    background-color: #000;
-
+    background: radial-gradient(ellipse at top, #0b0c2a 0%, #000010 100%);
     display: flex;
     justify-content: center;
     align-items: center;
