@@ -10,9 +10,9 @@ async function cargarProductos() {
 
         const productos = await respuesta.json();
 
-        //productosGlobal = productos.filter(p => p.ESTADO === 1);
+        productosGlobal = productos.filter(p => p.ESTADO === 1);
 
-        renderProductos(productos);
+        renderProductos(productosGlobal);
 
     } catch (error) {
         console.error("Error al cargar los productos:", error);

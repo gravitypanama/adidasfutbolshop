@@ -1,24 +1,35 @@
-body{
+body {
     font-family: 'Inter', sans-serif;
 }
 
-header {
+.site-header {
+    width: 100%;
+    padding: 18px 130px;
     background: radial-gradient(ellipse at top, #0b0c2a 0%, #000010 100%);
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.brand-title {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 600;
-    letter-spacing: -0.5px;
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #fff;
+}
 
-    background: linear-gradient(90deg, #4facfe, #6a5cff, #b721ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.adidas-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
 
-    text-shadow: 0 0 8px rgba(120,150,255,0.4);
+.header-orders {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
 .product-section {
@@ -34,7 +45,7 @@ header {
 
 .product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .product-img {
@@ -65,7 +76,7 @@ header {
 
 .active-thumb {
     border-color: #198754;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .product-info {
@@ -83,41 +94,41 @@ header {
 }
 
 .product-price .current-price {
-    font-size: 2.5rem;       
-    font-weight: 700;        
-    color: #0a0a0a;          
-    letter-spacing: 0.5px;   
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    letter-spacing: 0.5px;
 }
 
-.logo-img{
-    height:70px;
-    width:70px;
+.logo-img {
+    height: 70px;
+    width: 70px;
 
-    border-radius:50%;
-    object-fit:cover;
+    border-radius: 50%;
+    object-fit: cover;
 
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
-    transition:transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-    image-rendering:auto;
+    image-rendering: auto;
 }
 
-.brand-logo:hover .logo-img{
-    transform:scale(1.08);
-    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+.brand-logo:hover .logo-img {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.brand-title{
-    font-size:1.6rem;
-    font-weight:500;
-    color:#333;
+.brand-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
 
-    transition:color 0.25s ease;
+    transition: color 0.25s ease;
 }
 
-.brand-logo:hover .brand-title{
-    color:#000;
+.brand-logo:hover .brand-title {
+    color: #000;
 }
 
 .btn-space-catalog {
@@ -130,7 +141,7 @@ header {
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(228, 63, 90, 0.6);
-    animation: gradientShift 5s ease infinite; 
+    animation: gradientShift 5s ease infinite;
 }
 
 .btn-space-catalog:hover {
@@ -174,8 +185,8 @@ header {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); 
-    border-radius: 50%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
     width: 40px;
     height: 40px;
     background-size: 100%, 100%;
@@ -187,15 +198,31 @@ header {
 }
 
 @keyframes gradientShift {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @keyframes gradientShift {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -203,3 +230,6 @@ header {
         max-height: 350px;
     }
 }
+
+
+
