@@ -4,18 +4,18 @@ body {
 
 .site-header {
     width: 100%;
-    padding: 18px 130px;
-    background: radial-gradient(ellipse at top, #0b0c2a 0%, #000010 100%);
+    padding: 18px 0;
+    background-color: #000;
+
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
 
 .header-brand {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 14px;
-    color: #fff;
 }
 
 .adidas-logo {
@@ -23,13 +23,6 @@ body {
     height: 60px;
     object-fit: contain;
     filter: brightness(0) invert(1);
-}
-
-.header-orders {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    white-space: nowrap;
 }
 
 .product-section {
