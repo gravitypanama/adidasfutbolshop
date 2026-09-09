@@ -41,7 +41,7 @@ function renderProductos(productos) {
 
     productos
         .sort((a, b) => {
-            return parseFloat(a["PRECIO DE VENTA"]) - parseFloat(b["PRECIO DE VENTA"]);
+            return parseFloat(a["PRECIO VENTA"]) - parseFloat(b["PRECIO VENTA"]);
         })
         .forEach(producto => {
 
@@ -88,7 +88,7 @@ function renderProductos(productos) {
                                     </div>-->
 
                                     <div class="product-price mb-4">
-                                        <span class="current-price">$${producto["PRECIO DE VENTA"]}</span>
+                                        <span class="current-price">$${producto["PRECIO VENTA"]}</span>
                                     </div>
                                     
                                 </div>
